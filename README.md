@@ -77,15 +77,15 @@ Use the following -dry-run command to verify your Spring Boot Helm Chart
 "http-api-server" is out actual chart name 
 
 
-# Verify the helm install
+# Verify the helm install by using these commands
 helm list -a
-
 kubectl get all
+
 you will see the pod:
 pod/my-http-api-server-first-release-677c8f76dd-s7bww
 
 
-Now if you update the replica count or some others update the version and run
+Now if you update the replica count or some others,  Then update the version in Chart.yaml (like 0.1.1) and run
 `helm upgrade my-http-api-server-first-release .`
 
 
